@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ProjectController {
 	@GetMapping(value = "/projects/{shortName}")
 	public @ResponseBody String get(@PathVariable String shortName){
-		log.info("foo");
 		return shortName;
 	}
 }

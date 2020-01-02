@@ -8,4 +8,6 @@ public class Jag {
 	public static void main(String[] args) {
 		SpringApplication.run(Jag.class, args);
 	}
+
+
 }

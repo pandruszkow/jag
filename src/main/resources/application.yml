@@ -3,7 +3,8 @@ server:
 
 spring:
   main:
-    banner-mode: "off"
+    lazy-initialization: true
+#    banner-mode: "off"
   jpa:
     database: h2
     hibernate:
@@ -12,5 +13,10 @@ spring:
 
 logging:
   level:
-    org:
-      springframework: INFO
+    com.andruszkow: DEBUG
+    #request logging
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    #spring framework
+    org.springframework: WARN
+    #everything else
+    root: ERROR
